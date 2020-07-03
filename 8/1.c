@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <string.h>
+
 int main() {
     int n;
     scanf("%d\n", &n);
+
     char names[n][101];
     char max[101];
-    for (int i = 0; i < n; i++) {
-         //gets(names[i]);
-         int z = 0;
+
+    int z;.
+    for (int i = 0; i < n; i++) { //gets(names[i]);
+         z = 0;
          while (scanf("%c", &names[i][z]) != EOF && names[i][z] != '\n') {
              z++;
          }
-         printf("%s", names[i]);
-    }
-    return 0;
-    /*
+    
     for (int i = 0; i < n - 1; i++) {
         for (int j = i; j < n; j++) {
             max == names[j];
@@ -24,7 +24,7 @@ int main() {
         }
     }
     
-    printf("%s\n", max);
-    */
+    printf("%s", max);
+    
     return 0;
 }

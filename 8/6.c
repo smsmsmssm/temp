@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 int main() {
+	freopen("1.in","r",stdin);
     int n;
     int i, j;
     scanf("%d", &n);
     char names[n][101];
     char temp[101];
     
+    i=0,j=0;
     while (scanf("%c", &names[i][j]) != EOF) {
         for (i = 0; i < n; i++) {
             for (j = 0; j < 101; j++) {
